@@ -1,0 +1,23 @@
+// thickness: h = 0.1e-3 m
+// elastic modulus E = 5 GPa = 5 GN/m^2
+// stretching stiffness = Eh = 0.5 MN/m
+// bending stiffness ~= E(h^3)/12 = 0.4 mNm
+{
+    "density": 0.3,
+    "stretching": [
+        [0.1e3, 0, 0.1e3, 0.1e3],
+        [0.1e3, 0, 0.1e3, 0.1e3],
+        [0.1e3, 0, 0.1e3, 0.1e3],
+        [0.1e3, 0, 0.1e3, 0.1e3],
+        [0.1e3, 0, 0.1e3, 0.1e3],
+        [0.1e3, 0, 0.1e3, 0.1e3]
+    ],
+    "bending": [
+        [0.4e-3, 0.4e-3, 0.4e-3, 0.4e-3, 0.4e-3],
+        [0.4e-3, 0.4e-3, 0.4e-3, 0.4e-3, 0.4e-3],
+        [0.4e-3, 0.4e-3, 0.4e-3, 0.4e-3, 0.4e-3]
+    ],
+    "pcb_bending_weft": [5e-4, 0.0],
+    "pcb_bending_warp": [1e-5, 0.0],
+    "pcb_bending_bias": [3e-5, 0.0]
+}

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{66DC224B-8EB7-40F0-B026-E2A0B2CF554B}</ProjectGuid>
+    <RootNamespace>AdaptiveCloth</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)Output\$(Configuration)\</OutDir>
+    <IncludePath>D:\Projects\boost_1_79_0</IncludePath>
+    <LibraryPath>D:\Projects\boost_1_79_0\stage\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)Output\$(Configuration)\</OutDir>
+    <IncludePath>D:\Projects\boost_1_79_0</IncludePath>
+    <LibraryPath>D:\Projects\boost_1_79_0\stage\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Third-Party\include\taucs;$(SolutionDir)Third-Party\include\png;$(SolutionDir)Third-Party\include;D:\boost_1_80_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/wd 4244 /wd 4819 /wd 4267 /wd 4838 /wd 4305 /Zc:twoPhase- %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <OpenMPSupport>true</OpenMPSupport>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>D:\boost_1_80_0\lib64-msvc-14.3;$(SolutionDir)Third-Party\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>freeglut.lib;libtaucs.lib;libmetis.lib;clapack.lib;blas.lib;vcf2c.lib;legacy_stdio_definitions.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreBuildEvent>
+      <Command>copy "$(SolutionDir)Third-Party\bin\freeglut.dll" "$(OutDir)"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Third-Party\include\taucs;$(SolutionDir)Third-Party\include\png;$(SolutionDir)Third-Party\include;D:\boost_1_80_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/wd 4244 /wd 4819 /wd 4267 /wd 4838 /wd 4305 /Zc:twoPhase- %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <OpenMPSupport>true</OpenMPSupport>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>D:\boost_1_80_0\lib64-msvc-14.3;$(SolutionDir)Third-Party\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>freeglut.lib;libtaucs.lib;libmetis.lib;clapack.lib;blas.lib;vcf2c.lib;legacy_stdio_definitions.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreBuildEvent>
+      <Command>copy "$(SolutionDir)Third-Party\bin\freeglut.dll" "$(OutDir)"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Third-Party\include\alglib\alglibinternal.cpp" />
+    <ClCompile Include="..\Third-Party\include\alglib\alglibmisc.cpp" />
+    <ClCompile Include="..\Third-Party\include\alglib\ap.cpp" />
+    <ClCompile Include="..\Third-Party\include\alglib\dataanalysis.cpp" />
+    <ClCompile Include="..\Third-Party\include\alglib\diffequations.cpp" />
+    <ClCompile Include="..\Third-Party\include\alglib\fasttransforms.cpp" />
+    <ClCompile Include="..\Third-Party\include\alglib\integration.cpp" />
+    <ClCompile Include="..\Third-Party\include\alglib\interpolation.cpp" />
+    <ClCompile Include="..\Third-Party\include\alglib\linalg.cpp" />
+    <ClCompile Include="..\Third-Party\include\alglib\optimization.cpp" />
+    <ClCompile Include="..\Third-Party\include\alglib\solvers.cpp" />
+    <ClCompile Include="..\Third-Party\include\alglib\specialfunctions.cpp" />
+    <ClCompile Include="..\Third-Party\include\alglib\statistics.cpp" />
+    <ClCompile Include="..\Third-Party\include\json\json_reader.cpp" />
+    <ClCompile Include="..\Third-Party\include\json\json_value.cpp" />
+    <ClCompile Include="..\Third-Party\include\json\json_writer.cpp" />
+    <ClCompile Include="Application.cpp" />
+    <ClCompile Include="auglag.cpp" />
+    <ClCompile Include="bah.cpp" />
+    <ClCompile Include="bvh.cpp" />
+    <ClCompile Include="cloth.cpp" />
+    <ClCompile Include="collision.cpp" />
+    <ClCompile Include="collisionutil.cpp" />
+    <ClCompile Include="conf.cpp" />
+    <ClCompile Include="constraint.cpp" />
+    <ClCompile Include="dde.cpp" />
+    <ClCompile Include="display.cpp" />
+    <ClCompile Include="displayphysics.cpp" />
+    <ClCompile Include="displayreplay.cpp" />
+    <ClCompile Include="displaytesting.cpp" />
+    <ClCompile Include="dynamicremesh.cpp" />
+    <ClCompile Include="geometry.cpp" />
+    <ClCompile Include="handle.cpp" />
+    <ClCompile Include="io.cpp" />
+    <ClCompile Include="lbfgs.cpp" />
+    <ClCompile Include="lsnewton.cpp" />
+    <ClCompile Include="magic.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="mesh.cpp" />
+    <ClCompile Include="misc.cpp" />
+    <ClCompile Include="morph.cpp" />
+    <ClCompile Include="mot_parser.cpp" />
+    <ClCompile Include="nearobs.cpp" />
+    <ClCompile Include="nlcg.cpp" />
+    <ClCompile Include="obstacle.cpp" />
+    <ClCompile Include="physics.cpp" />
+    <ClCompile Include="plasticity.cpp" />
+    <ClCompile Include="popfilter.cpp" />
+    <ClCompile Include="proximity.cpp" />
+    <ClCompile Include="remesh.cpp" />
+    <ClCompile Include="runphysics.cpp" />
+    <ClCompile Include="separate.cpp" />
+    <ClCompile Include="separateobs.cpp" />
+    <ClCompile Include="simulation.cpp" />
+    <ClCompile Include="spline.cpp" />
+    <ClCompile Include="strainlimiting.cpp" />
+    <ClCompile Include="taucs.cpp" />
+    <ClCompile Include="tensormax.cpp" />
+    <ClCompile Include="timer.cpp" />
+    <ClCompile Include="transformation.cpp" />
+    <ClCompile Include="trustregion.cpp" />
+    <ClCompile Include="util.cpp" />
+    <ClCompile Include="vectors.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Third-Party\include\alglib\alglibinternal.h" />
+    <ClInclude Include="..\Third-Party\include\alglib\alglibmisc.h" />
+    <ClInclude Include="..\Third-Party\include\alglib\ap.h" />
+    <ClInclude Include="..\Third-Party\include\alglib\dataanalysis.h" />
+    <ClInclude Include="..\Third-Party\include\alglib\diffequations.h" />
+    <ClInclude Include="..\Third-Party\include\alglib\fasttransforms.h" />
+    <ClInclude Include="..\Third-Party\include\alglib\integration.h" />
+    <ClInclude Include="..\Third-Party\include\alglib\interpolation.h" />
+    <ClInclude Include="..\Third-Party\include\alglib\linalg.h" />
+    <ClInclude Include="..\Third-Party\include\alglib\optimization.h" />
+    <ClInclude Include="..\Third-Party\include\alglib\solvers.h" />
+    <ClInclude Include="..\Third-Party\include\alglib\specialfunctions.h" />
+    <ClInclude Include="..\Third-Party\include\alglib\statistics.h" />
+    <ClInclude Include="..\Third-Party\include\alglib\stdafx.h" />
+    <ClInclude Include="..\Third-Party\include\json\autolink.h" />
+    <ClInclude Include="..\Third-Party\include\json\config.h" />
+    <ClInclude Include="..\Third-Party\include\json\features.h" />
+    <ClInclude Include="..\Third-Party\include\json\forwards.h" />
+    <ClInclude Include="..\Third-Party\include\json\json.h" />
+    <ClInclude Include="..\Third-Party\include\json\json_batchallocator.h" />
+    <ClInclude Include="..\Third-Party\include\json\reader.h" />
+    <ClInclude Include="..\Third-Party\include\json\value.h" />
+    <ClInclude Include="..\Third-Party\include\json\writer.h" />
+    <ClInclude Include="Application.h" />
+    <ClInclude Include="auglag.hpp" />
+    <ClInclude Include="bah.hpp" />
+    <ClInclude Include="blockvectors.hpp" />
+    <ClInclude Include="bvh.hpp" />
+    <ClInclude Include="cloth.hpp" />
+    <ClInclude Include="collision.hpp" />
+    <ClInclude Include="collisionutil.hpp" />
+    <ClInclude Include="conf.hpp" />
+    <ClInclude Include="constraint.hpp" />
+    <ClInclude Include="dde.hpp" />
+    <ClInclude Include="display.hpp" />
+    <ClInclude Include="displayphysics.hpp" />
+    <ClInclude Include="displayreplay.hpp" />
+    <ClInclude Include="displaytesting.hpp" />
+    <ClInclude Include="dynamicremesh.hpp" />
+    <ClInclude Include="geometry.hpp" />
+    <ClInclude Include="handle.hpp" />
+    <ClInclude Include="io.hpp" />
+    <ClInclude Include="magic.hpp" />
+    <ClInclude Include="mesh.hpp" />
+    <ClInclude Include="misc.hpp" />
+    <ClInclude Include="morph.hpp" />
+    <ClInclude Include="mot_parser.hpp" />
+    <ClInclude Include="nearobs.hpp" />
+    <ClInclude Include="obstacle.hpp" />
+    <ClInclude Include="opengl.hpp" />
+    <ClInclude Include="optimization.hpp" />
+    <ClInclude Include="physics.hpp" />
+    <ClInclude Include="plasticity.hpp" />
+    <ClInclude Include="popfilter.hpp" />
+    <ClInclude Include="proximity.hpp" />
+    <ClInclude Include="remesh.hpp" />
+    <ClInclude Include="runphysics.hpp" />
+    <ClInclude Include="separate.hpp" />
+    <ClInclude Include="separateobs.hpp" />
+    <ClInclude Include="simulation.hpp" />
+    <ClInclude Include="sparse.hpp" />
+    <ClInclude Include="spline.hpp" />
+    <ClInclude Include="strainlimiting.hpp" />
+    <ClInclude Include="taucs.hpp" />
+    <ClInclude Include="tensormax.hpp" />
+    <ClInclude Include="timer.hpp" />
+    <ClInclude Include="transformation.hpp" />
+    <ClInclude Include="util.hpp" />
+    <ClInclude Include="vectors.hpp" />
+    <ClInclude Include="winport.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

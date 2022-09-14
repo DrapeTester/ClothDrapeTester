@@ -1,0 +1,536 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="0. Third-Party">
+      <UniqueIdentifier>{e65fc154-066d-450f-9ec5-b7adff99754a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="0. Third-Party\json">
+      <UniqueIdentifier>{4371e73a-c04e-45cd-ac30-ced3dd11e8ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="0. Third-Party\alglib">
+      <UniqueIdentifier>{03640ce5-6b84-4e61-bb49-3d93a9aa579d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1. Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="1. Source Files\Cloth">
+      <UniqueIdentifier>{39b775eb-1044-4c7a-ad93-e5e87dc3fe99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1. Source Files\Bah">
+      <UniqueIdentifier>{8775d55e-e355-4805-95de-9d1327996b2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1. Source Files\Bvh">
+      <UniqueIdentifier>{4eacee63-18a3-42a3-abf8-b84ca5d1c7e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1. Source Files\Geometry">
+      <UniqueIdentifier>{6584475b-9a44-4cc7-8e44-ce1a45eab904}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1. Source Files\Magic">
+      <UniqueIdentifier>{9dc9b091-92d2-45f4-be98-4d8362e34e12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1. Source Files\Handle">
+      <UniqueIdentifier>{6873b4ee-16c2-454f-a8d8-31d464cc859d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1. Source Files\Physics">
+      <UniqueIdentifier>{5b80f2ef-f9fe-497a-adaf-6c209cafbbca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1. Source Files\RunPhysics">
+      <UniqueIdentifier>{c2473d95-3f5a-4be0-a0ef-8b8e7e4e4475}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1. Source Files\Simulation">
+      <UniqueIdentifier>{66c3f707-7645-4495-b9aa-ff9be8d4fd14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1. Source Files\Proximity">
+      <UniqueIdentifier>{fbfad0f4-87ce-47e2-84f7-7d96b63f34f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1. Source Files\Remesh">
+      <UniqueIdentifier>{7b98b9c7-e5ab-4e06-9d48-72504c34d184}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1. Source Files\Collision">
+      <UniqueIdentifier>{bc02c9d9-e312-435e-9f3e-498599760984}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1. Source Files\DynamicRemesh">
+      <UniqueIdentifier>{5ab1fba6-87dd-4987-98eb-5953351ccfb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1. Source Files\Display">
+      <UniqueIdentifier>{3c878d69-7bdc-48e7-b02e-d02de3994638}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1. Source Files\Constraint">
+      <UniqueIdentifier>{b1fc93b8-5861-4560-b87e-1ed12640618f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1. Source Files\Morph">
+      <UniqueIdentifier>{4a3eac28-d7ab-4437-965e-1f1a0d088822}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1. Source Files\Obstacle">
+      <UniqueIdentifier>{33c045a2-3564-49be-82f3-cb8971d070c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1. Source Files\Auglag">
+      <UniqueIdentifier>{f913e07e-0ba6-4066-a81b-af6f3120b8ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1. Source Files\Dde">
+      <UniqueIdentifier>{60f6a53e-0372-4b88-8474-ef1e6149c361}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1. Source Files\CollisionUtil">
+      <UniqueIdentifier>{8eb784fe-48ca-4779-b64f-9cedca644ce2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1. Source Files\Transformation">
+      <UniqueIdentifier>{5d781d46-9999-436c-a22d-500567957072}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1. Source Files\Spline">
+      <UniqueIdentifier>{0156aca1-1e10-4f08-8194-e8984465e6b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1. Source Files\Plasticity">
+      <UniqueIdentifier>{4efe6b8c-fd71-4ee0-b6ce-a28a72574c5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1. Source Files\Popfilter">
+      <UniqueIdentifier>{ffa809ec-063e-4cdc-bdc2-c9779909f70b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1. Source Files\Mesh">
+      <UniqueIdentifier>{b4a06ca8-373c-4e67-9c4a-f80c225cc189}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1. Source Files\Conf">
+      <UniqueIdentifier>{1e1c0761-b4f0-44b5-8f34-8325dbb14014}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1. Source Files\Taucs">
+      <UniqueIdentifier>{afb41fa8-f50e-4172-97f6-275437138eab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1. Source Files\Timer">
+      <UniqueIdentifier>{1a1a4ae7-9353-4b03-b814-bf05ba116a9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1. Source Files\NearObs">
+      <UniqueIdentifier>{aa765f5a-c115-40a6-9376-3f43f6f88f84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1. Source Files\StrainLimiting">
+      <UniqueIdentifier>{392f7c0d-2695-4863-91e2-2c3f443e4e8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1. Source Files\Vectors">
+      <UniqueIdentifier>{6da0b132-555a-41d2-ae63-d4111f0955a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1. Source Files\Misc">
+      <UniqueIdentifier>{16b290a9-87b3-4012-b42b-1e88ee424a52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1. Source Files\SeparateObs">
+      <UniqueIdentifier>{1d801a57-a9e9-4965-9980-a6cc40bae9ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1. Source Files\Separate">
+      <UniqueIdentifier>{0119949e-6c1c-4072-ad2e-c69fef853e1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1. Source Files\Util">
+      <UniqueIdentifier>{338dba1f-a88d-45e8-8208-9df85c829b0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1. Source Files\TensorMax">
+      <UniqueIdentifier>{8f94f68e-8fda-4527-93e7-2ded91228b77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1. Source Files\IO">
+      <UniqueIdentifier>{46c82e5b-5d47-4116-816d-9d6e07b94eb4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1. Source Files\MotParser">
+      <UniqueIdentifier>{079b361d-11fa-467a-8b68-177388ea3ece}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application">
+      <UniqueIdentifier>{35251ce2-8d88-4745-a54a-c11b458fd237}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="lbfgs.cpp">
+      <Filter>1. Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsnewton.cpp">
+      <Filter>1. Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nlcg.cpp">
+      <Filter>1. Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="trustregion.cpp">
+      <Filter>1. Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Third-Party\include\alglib\alglibinternal.cpp">
+      <Filter>0. Third-Party\alglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Third-Party\include\alglib\alglibmisc.cpp">
+      <Filter>0. Third-Party\alglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Third-Party\include\alglib\ap.cpp">
+      <Filter>0. Third-Party\alglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Third-Party\include\alglib\dataanalysis.cpp">
+      <Filter>0. Third-Party\alglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Third-Party\include\alglib\diffequations.cpp">
+      <Filter>0. Third-Party\alglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Third-Party\include\alglib\fasttransforms.cpp">
+      <Filter>0. Third-Party\alglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Third-Party\include\alglib\integration.cpp">
+      <Filter>0. Third-Party\alglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Third-Party\include\alglib\interpolation.cpp">
+      <Filter>0. Third-Party\alglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Third-Party\include\alglib\linalg.cpp">
+      <Filter>0. Third-Party\alglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Third-Party\include\alglib\optimization.cpp">
+      <Filter>0. Third-Party\alglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Third-Party\include\alglib\solvers.cpp">
+      <Filter>0. Third-Party\alglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Third-Party\include\alglib\specialfunctions.cpp">
+      <Filter>0. Third-Party\alglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Third-Party\include\alglib\statistics.cpp">
+      <Filter>0. Third-Party\alglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Third-Party\include\json\json_reader.cpp">
+      <Filter>0. Third-Party\json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Third-Party\include\json\json_value.cpp">
+      <Filter>0. Third-Party\json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Third-Party\include\json\json_writer.cpp">
+      <Filter>0. Third-Party\json</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="display.cpp">
+      <Filter>1. Source Files\Display</Filter>
+    </ClCompile>
+    <ClCompile Include="displaytesting.cpp">
+      <Filter>1. Source Files\Display</Filter>
+    </ClCompile>
+    <ClCompile Include="displayreplay.cpp">
+      <Filter>1. Source Files\Display</Filter>
+    </ClCompile>
+    <ClCompile Include="displayphysics.cpp">
+      <Filter>1. Source Files\Display</Filter>
+    </ClCompile>
+    <ClCompile Include="dynamicremesh.cpp">
+      <Filter>1. Source Files\DynamicRemesh</Filter>
+    </ClCompile>
+    <ClCompile Include="physics.cpp">
+      <Filter>1. Source Files\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="runphysics.cpp">
+      <Filter>1. Source Files\RunPhysics</Filter>
+    </ClCompile>
+    <ClCompile Include="simulation.cpp">
+      <Filter>1. Source Files\Simulation</Filter>
+    </ClCompile>
+    <ClCompile Include="proximity.cpp">
+      <Filter>1. Source Files\Proximity</Filter>
+    </ClCompile>
+    <ClCompile Include="collision.cpp">
+      <Filter>1. Source Files\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="cloth.cpp">
+      <Filter>1. Source Files\Cloth</Filter>
+    </ClCompile>
+    <ClCompile Include="bah.cpp">
+      <Filter>1. Source Files\Bah</Filter>
+    </ClCompile>
+    <ClCompile Include="bvh.cpp">
+      <Filter>1. Source Files\Bvh</Filter>
+    </ClCompile>
+    <ClCompile Include="geometry.cpp">
+      <Filter>1. Source Files\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="magic.cpp">
+      <Filter>1. Source Files\Magic</Filter>
+    </ClCompile>
+    <ClCompile Include="handle.cpp">
+      <Filter>1. Source Files\Handle</Filter>
+    </ClCompile>
+    <ClCompile Include="constraint.cpp">
+      <Filter>1. Source Files\Constraint</Filter>
+    </ClCompile>
+    <ClCompile Include="morph.cpp">
+      <Filter>1. Source Files\Morph</Filter>
+    </ClCompile>
+    <ClCompile Include="obstacle.cpp">
+      <Filter>1. Source Files\Obstacle</Filter>
+    </ClCompile>
+    <ClCompile Include="auglag.cpp">
+      <Filter>1. Source Files\Auglag</Filter>
+    </ClCompile>
+    <ClCompile Include="dde.cpp">
+      <Filter>1. Source Files\Dde</Filter>
+    </ClCompile>
+    <ClCompile Include="collisionutil.cpp">
+      <Filter>1. Source Files\CollisionUtil</Filter>
+    </ClCompile>
+    <ClCompile Include="transformation.cpp">
+      <Filter>1. Source Files\Transformation</Filter>
+    </ClCompile>
+    <ClCompile Include="spline.cpp">
+      <Filter>1. Source Files\Spline</Filter>
+    </ClCompile>
+    <ClCompile Include="plasticity.cpp">
+      <Filter>1. Source Files\Plasticity</Filter>
+    </ClCompile>
+    <ClCompile Include="popfilter.cpp">
+      <Filter>1. Source Files\Popfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="mesh.cpp">
+      <Filter>1. Source Files\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="remesh.cpp">
+      <Filter>1. Source Files\Remesh</Filter>
+    </ClCompile>
+    <ClCompile Include="conf.cpp">
+      <Filter>1. Source Files\Conf</Filter>
+    </ClCompile>
+    <ClCompile Include="taucs.cpp">
+      <Filter>1. Source Files\Taucs</Filter>
+    </ClCompile>
+    <ClCompile Include="timer.cpp">
+      <Filter>1. Source Files\Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="nearobs.cpp">
+      <Filter>1. Source Files\NearObs</Filter>
+    </ClCompile>
+    <ClCompile Include="strainlimiting.cpp">
+      <Filter>1. Source Files\StrainLimiting</Filter>
+    </ClCompile>
+    <ClCompile Include="vectors.cpp">
+      <Filter>1. Source Files\Vectors</Filter>
+    </ClCompile>
+    <ClCompile Include="misc.cpp">
+      <Filter>1. Source Files\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="separateobs.cpp">
+      <Filter>1. Source Files\SeparateObs</Filter>
+    </ClCompile>
+    <ClCompile Include="separate.cpp">
+      <Filter>1. Source Files\Separate</Filter>
+    </ClCompile>
+    <ClCompile Include="util.cpp">
+      <Filter>1. Source Files\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="tensormax.cpp">
+      <Filter>1. Source Files\TensorMax</Filter>
+    </ClCompile>
+    <ClCompile Include="io.cpp">
+      <Filter>1. Source Files\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="mot_parser.cpp">
+      <Filter>1. Source Files\MotParser</Filter>
+    </ClCompile>
+    <ClCompile Include="Application.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="blockvectors.hpp">
+      <Filter>1. Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="opengl.hpp">
+      <Filter>1. Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="optimization.hpp">
+      <Filter>1. Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sparse.hpp">
+      <Filter>1. Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="winport.hpp">
+      <Filter>1. Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Third-Party\include\alglib\alglibinternal.h">
+      <Filter>0. Third-Party\alglib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Third-Party\include\alglib\alglibmisc.h">
+      <Filter>0. Third-Party\alglib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Third-Party\include\alglib\ap.h">
+      <Filter>0. Third-Party\alglib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Third-Party\include\alglib\dataanalysis.h">
+      <Filter>0. Third-Party\alglib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Third-Party\include\alglib\diffequations.h">
+      <Filter>0. Third-Party\alglib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Third-Party\include\alglib\fasttransforms.h">
+      <Filter>0. Third-Party\alglib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Third-Party\include\alglib\integration.h">
+      <Filter>0. Third-Party\alglib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Third-Party\include\alglib\interpolation.h">
+      <Filter>0. Third-Party\alglib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Third-Party\include\alglib\linalg.h">
+      <Filter>0. Third-Party\alglib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Third-Party\include\alglib\optimization.h">
+      <Filter>0. Third-Party\alglib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Third-Party\include\alglib\solvers.h">
+      <Filter>0. Third-Party\alglib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Third-Party\include\alglib\specialfunctions.h">
+      <Filter>0. Third-Party\alglib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Third-Party\include\alglib\statistics.h">
+      <Filter>0. Third-Party\alglib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Third-Party\include\alglib\stdafx.h">
+      <Filter>0. Third-Party\alglib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Third-Party\include\json\autolink.h">
+      <Filter>0. Third-Party\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Third-Party\include\json\config.h">
+      <Filter>0. Third-Party\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Third-Party\include\json\features.h">
+      <Filter>0. Third-Party\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Third-Party\include\json\forwards.h">
+      <Filter>0. Third-Party\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Third-Party\include\json\json.h">
+      <Filter>0. Third-Party\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Third-Party\include\json\json_batchallocator.h">
+      <Filter>0. Third-Party\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Third-Party\include\json\reader.h">
+      <Filter>0. Third-Party\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Third-Party\include\json\value.h">
+      <Filter>0. Third-Party\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Third-Party\include\json\writer.h">
+      <Filter>0. Third-Party\json</Filter>
+    </ClInclude>
+    <ClInclude Include="display.hpp">
+      <Filter>1. Source Files\Display</Filter>
+    </ClInclude>
+    <ClInclude Include="displaytesting.hpp">
+      <Filter>1. Source Files\Display</Filter>
+    </ClInclude>
+    <ClInclude Include="displayreplay.hpp">
+      <Filter>1. Source Files\Display</Filter>
+    </ClInclude>
+    <ClInclude Include="displayphysics.hpp">
+      <Filter>1. Source Files\Display</Filter>
+    </ClInclude>
+    <ClInclude Include="dynamicremesh.hpp">
+      <Filter>1. Source Files\DynamicRemesh</Filter>
+    </ClInclude>
+    <ClInclude Include="physics.hpp">
+      <Filter>1. Source Files\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="runphysics.hpp">
+      <Filter>1. Source Files\RunPhysics</Filter>
+    </ClInclude>
+    <ClInclude Include="simulation.hpp">
+      <Filter>1. Source Files\Simulation</Filter>
+    </ClInclude>
+    <ClInclude Include="proximity.hpp">
+      <Filter>1. Source Files\Proximity</Filter>
+    </ClInclude>
+    <ClInclude Include="collision.hpp">
+      <Filter>1. Source Files\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="cloth.hpp">
+      <Filter>1. Source Files\Cloth</Filter>
+    </ClInclude>
+    <ClInclude Include="bah.hpp">
+      <Filter>1. Source Files\Bah</Filter>
+    </ClInclude>
+    <ClInclude Include="bvh.hpp">
+      <Filter>1. Source Files\Bvh</Filter>
+    </ClInclude>
+    <ClInclude Include="geometry.hpp">
+      <Filter>1. Source Files\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="magic.hpp">
+      <Filter>1. Source Files\Magic</Filter>
+    </ClInclude>
+    <ClInclude Include="handle.hpp">
+      <Filter>1. Source Files\Handle</Filter>
+    </ClInclude>
+    <ClInclude Include="constraint.hpp">
+      <Filter>1. Source Files\Constraint</Filter>
+    </ClInclude>
+    <ClInclude Include="morph.hpp">
+      <Filter>1. Source Files\Morph</Filter>
+    </ClInclude>
+    <ClInclude Include="obstacle.hpp">
+      <Filter>1. Source Files\Obstacle</Filter>
+    </ClInclude>
+    <ClInclude Include="auglag.hpp">
+      <Filter>1. Source Files\Auglag</Filter>
+    </ClInclude>
+    <ClInclude Include="dde.hpp">
+      <Filter>1. Source Files\Dde</Filter>
+    </ClInclude>
+    <ClInclude Include="collisionutil.hpp">
+      <Filter>1. Source Files\CollisionUtil</Filter>
+    </ClInclude>
+    <ClInclude Include="transformation.hpp">
+      <Filter>1. Source Files\Transformation</Filter>
+    </ClInclude>
+    <ClInclude Include="spline.hpp">
+      <Filter>1. Source Files\Spline</Filter>
+    </ClInclude>
+    <ClInclude Include="plasticity.hpp">
+      <Filter>1. Source Files\Plasticity</Filter>
+    </ClInclude>
+    <ClInclude Include="popfilter.hpp">
+      <Filter>1. Source Files\Popfilter</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh.hpp">
+      <Filter>1. Source Files\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="remesh.hpp">
+      <Filter>1. Source Files\Remesh</Filter>
+    </ClInclude>
+    <ClInclude Include="conf.hpp">
+      <Filter>1. Source Files\Conf</Filter>
+    </ClInclude>
+    <ClInclude Include="taucs.hpp">
+      <Filter>1. Source Files\Taucs</Filter>
+    </ClInclude>
+    <ClInclude Include="timer.hpp">
+      <Filter>1. Source Files\Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="nearobs.hpp">
+      <Filter>1. Source Files\NearObs</Filter>
+    </ClInclude>
+    <ClInclude Include="strainlimiting.hpp">
+      <Filter>1. Source Files\StrainLimiting</Filter>
+    </ClInclude>
+    <ClInclude Include="vectors.hpp">
+      <Filter>1. Source Files\Vectors</Filter>
+    </ClInclude>
+    <ClInclude Include="misc.hpp">
+      <Filter>1. Source Files\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="separateobs.hpp">
+      <Filter>1. Source Files\SeparateObs</Filter>
+    </ClInclude>
+    <ClInclude Include="separate.hpp">
+      <Filter>1. Source Files\Separate</Filter>
+    </ClInclude>
+    <ClInclude Include="util.hpp">
+      <Filter>1. Source Files\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="tensormax.hpp">
+      <Filter>1. Source Files\TensorMax</Filter>
+    </ClInclude>
+    <ClInclude Include="io.hpp">
+      <Filter>1. Source Files\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="mot_parser.hpp">
+      <Filter>1. Source Files\MotParser</Filter>
+    </ClInclude>
+    <ClInclude Include="Application.h">
+      <Filter>Application</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
